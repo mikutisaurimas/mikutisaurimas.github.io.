@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Mano CV - Paslaugos</title>
   <meta name="author" content="Aurimas Mikutis">
-  <meta name="description" content="Aurimas Mikutis CV puslapis - Teikiamos paslaugos, kainos, technologijos ir etapai">
-  <meta name="keywords" content="CV, Aurimas Mikutis, Paslaugos, Programavimas, Svetainių kūrimas, MATLAB">
+  <meta name="description" content="Aurimas Mikutis CV puslapis - Teikiamos paslaugos, kainos, technologijos, etapai ir medijos įrašai">
+  <meta name="keywords" content="CV, Aurimas Mikutis, Paslaugos, Programavimas, Svetainių kūrimas, MATLAB, Medija">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.jpeg" rel="icon" type="image/jpeg">
@@ -83,7 +83,7 @@
               <tr>
                 <td><strong>Tinklalapių programavimas</strong></td>
                 <td>Asmeninių ir reprezentacinių svetainių kūrimas, pritaikymas mobiliesiems įrenginiams (Responsive design).</td>
-                <td>100 Eur</td>
+                <td>100 Eur[cite: 10]</td>
               </tr>
               <tr>
                 <td><strong>MATLAB modeliavimas</strong></td>
@@ -100,14 +100,13 @@
         </div>
 
         <!-- Papildoma dalis: HTML Sąrašai -->
-        <div class="row gy-4">
-          <!-- a) ir c) Nenumatytasis sąrašas su įdėtiniu sąrašu -->
+        <div class="row gy-4 mb-5">
+          <!-- Nenumatytasis sąrašas su įdėtiniu sąrašu -->
           <div class="col-lg-6">
             <div class="p-4 rounded h-100" style="background: rgba(255, 255, 255, 0.05);">
               <h3 class="mb-3">Naudojamos technologijos ir įrankiai</h3>
               <ul class="mb-0">
                 <li><strong>HTML5 ir CSS3</strong> (Svetainių struktūra ir stiliai)
-                  <!-- Įdėtinis sąrašas (Nested List) su 2 elementais -->
                   <ul class="mt-2">
                     <li>Bootstrap karkasas (Responsive grid sistema)</li>
                     <li>CSS kaskadiniai stiliai vizualiniam apipavidalinimui</li>
@@ -120,7 +119,7 @@
             </div>
           </div>
 
-          <!-- b) Numeruotasis sąrašas (Paslaugos atlikimo etapai) -->
+          <!-- Numeruotasis sąrašas (Paslaugos atlikimo etapai) -->
           <div class="col-lg-6">
             <div class="p-4 rounded h-100" style="background: rgba(255, 255, 255, 0.05);">
               <h3 class="mb-3">Paslaugos atlikimo etapai</h3>
@@ -132,6 +131,48 @@
             </div>
           </div>
         </div>
+
+        <!-- PAPILDOMA UŽDUOTIS: Medijos įrašai (Vaizdo įrašas, YouTube embed ir garso įrašas) -->
+        <div class="row gy-4">
+          <div class="col-12">
+            <div class="p-4 rounded" style="background: rgba(255, 255, 255, 0.05);">
+              <h3 class="mb-4">Medijos įrašai</h3>
+              
+              <div class="row gy-4">
+                <!-- b) Vietinis / atsisiųstas vaizdo įrašas (<video>) -->
+                <div class="col-lg-4">
+                  <h5 class="mb-3">1. Programavimo procesas (Video)</h5>
+                  <video controls class="w-100 rounded" style="max-height: 250px; object-fit: cover;">
+                    <source src="assets/media/computer-typing.mp4" type="video/mp4">
+                    Jūsų naršyklė nepalaiko video elemento.
+                  </video>
+                  <p class="text-muted small mt-2">Šaltinis: Pexels (išsaugotas `assets/media/` aplanke)</p>
+                </div>
+
+                <!-- c) YouTube įrašas per <iframe> su embed adresu -->
+                <div class="col-lg-4">
+                  <h5 class="mb-3">2. YouTube vaizdo įrašas</h5>
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/BoUVIhtqAw" title="YouTube video" allowfullscreen></iframe>
+                  </div>
+                  <p class="text-muted small mt-2">Integruotas įrašas naudojant embed nuorodą</p>
+                </div>
+
+                <!-- d) Garso įrašas (<audio>) -->
+                <div class="col-lg-4">
+                  <h5 class="mb-3">3. Garso įrašas (Audio)</h5>
+                  <audio controls class="w-100 mt-3">
+                    <source src="assets/media/clock-ticking.mp3" type="audio/mpeg">
+                    Jūsų naršyklė nepalaiko audio elemento.
+                  </audio>
+                  <p class="text-muted small mt-2">Šaltinis: Pixabay (išsaugotas `assets/media/` aplanke)</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End Papildoma užduotis -->
 
       </div>
 
