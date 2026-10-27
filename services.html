@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - FolioOne Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Mano CV - Paslaugos</title>
+  <meta name="author" content="Aurimas Mikutis">
+  <meta name="description" content="Aurimas Mikutis CV puslapis - Teikiamos paslaugos, kainos, technologijos ir etapai">
+  <meta name="keywords" content="CV, Aurimas Mikutis, Paslaugos, Programavimas, Svetainių kūrimas, MATLAB">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.jpeg" rel="icon" type="image/jpeg">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -26,14 +27,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="services-page">
@@ -41,19 +34,14 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Pagrindinis</a></li>
+          <li><a href="about.html">Apie</a></li>
+          <li><a href="resume.html">Patirtis</a></li>
+          <li><a href="services.html" class="active">Paslaugos</a></li>
+          <li><a href="portfolio.html">Darbai</a></li>
+          <li><a href="contact.html">Kontaktai</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -62,7 +50,7 @@
         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/mikutisaurimas" class="linkedin"><i class="bi bi-github"></i></a>
       </div>
 
     </div>
@@ -75,77 +63,74 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>Paslaugos</h2>
+        <p>Teikiamos programavimo, skaičiavimų bei konsultacijų paslaugos.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row justify-content-center g-5">
+        <!-- HTML Lentelė (4x3 dydžio) -->
+        <div class="table-responsive mb-5">
+          <table class="table table-dark table-striped table-bordered align-middle">
+            <thead class="table-primary text-dark">
+              <tr>
+                <th scope="col" style="width: 25%;">Paslaugos pavadinimas</th>
+                <th scope="col" style="width: 55%;">Aprašymas</th>
+                <th scope="col" style="width: 20%;">Kaina</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tinklalapių programavimas</strong></td>
+                <td>Asmeninių ir reprezentacinių svetainių kūrimas, pritaikymas mobiliesiems įrenginiams (Responsive design).</td>
+                <td>100 Eur</td>
+              </tr>
+              <tr>
+                <td><strong>MATLAB modeliavimas</strong></td>
+                <td>Matematinių skaičiavimų, grafikų braižymo bei signalų analizės skriptų rengimas laboratoriniams darbams.</td>
+                <td>60 Eur</td>
+              </tr>
+              <tr>
+                <td><strong>C++ / C programavimo užduotys</strong></td>
+                <td>Konsolinių programų, algoritmų bei duomenų struktūrų optimizavimas ir programavimas.</td>
+                <td>50 Eur</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3>Custom Web Development</h3>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+        <!-- Papildoma dalis: HTML Sąrašai -->
+        <div class="row gy-4">
+          <!-- a) ir c) Nenumatytasis sąrašas su įdėtiniu sąrašu -->
+          <div class="col-lg-6">
+            <div class="p-4 rounded h-100" style="background: rgba(255, 255, 255, 0.05);">
+              <h3 class="mb-3">Naudojamos technologijos ir įrankiai</h3>
+              <ul class="mb-0">
+                <li><strong>HTML5 ir CSS3</strong> (Svetainių struktūra ir stiliai)
+                  <!-- Įdėtinis sąrašas (Nested List) su 2 elementais -->
+                  <ul class="mt-2">
+                    <li>Bootstrap karkasas (Responsive grid sistema)</li>
+                    <li>CSS kaskadiniai stiliai vizualiniam apipavidalinimui</li>
+                  </ul>
+                </li>
+                <li class="mt-2"><strong>MATLAB</strong> (Matematinis modeliavimas ir signalų analizė)</li>
+                <li class="mt-2"><strong>C++ / C</strong> (Algoritmai ir žemo lygio programavimas)</li>
+                <li class="mt-2"><strong>Git ir GitHub Pages</strong> (Versijų kontrolė ir talpinimas)</li>
+              </ul>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-phone-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3>Mobile App Solutions</h3>
-                <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+          <!-- b) Numeruotasis sąrašas (Paslaugos atlikimo etapai) -->
+          <div class="col-lg-6">
+            <div class="p-4 rounded h-100" style="background: rgba(255, 255, 255, 0.05);">
+              <h3 class="mb-3">Paslaugos atlikimo etapai</h3>
+              <ol class="mb-0">
+                <li class="mb-2"><strong>Kliento poreikių analizė:</strong> Aptariami užsakymo reikalavimai, tikslai, terminai bei norima struktūra.</li>
+                <li class="mb-2"><strong>Projektavimas ir programavimas:</strong> Sukuriamas pirminis svetainės arba programos prototipas, rašomas kodas.</li>
+                <li class="mb-2"><strong>Testavimas ir paleidimas:</strong> Atliekamas patikrinimas įvairiuose įrenginiuose ir projektas perkeliamas į serverį.</li>
+              </ol>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-palette2"></i>
-              </div>
-              <div class="service-content">
-                <h3>UI/UX Design</h3>
-                <p>Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-bar-chart-line"></i>
-              </div>
-              <div class="service-content">
-                <h3>Digital Marketing</h3>
-                <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
-                <a href="" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+          </div>
         </div>
 
       </div>
@@ -158,20 +143,16 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">FolioOne</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Autoriaus teisės</span> <strong class="px-1 sitename">Aurimas Mikutis</strong> <span>Visos teisės saugomos<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/mikutisaurimas"><i class="bi bi-github"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
