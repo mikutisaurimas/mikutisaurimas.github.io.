@@ -1,0 +1,84 @@
+/* 1. Visos svetainės fonas ir šriftas */
+body, html {
+  background-color: #0d1117 !important;
+  color: #f0f6fc !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* 2. Antraštės – ryški raudona spalva su šešėliu */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif !important;
+  color: #f85149 !important;
+  font-weight: 800 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. Pastraipos ir sąrašai */
+p, li, span, td, th {
+  color: #f0f6fc !important;
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+}
+
+/* 4. Mygtukai – ryškiai raudoni su švytėjimu */
+.btn, button[type="submit"], .btn-primary {
+  background-color: #f85149 !important;
+  border-color: #f85149 !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  font-weight: bold !important;
+  padding: 12px 30px !important;
+  box-shadow: 0 0 15px rgba(248, 81, 73, 0.6) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn:hover, button[type="submit"]:hover, .btn-primary:hover {
+  background-color: #da3633 !important;
+  transform: scale(1.05);
+}
+
+/* 5. Nuorodos – raudonos */
+a {
+  color: #f85149 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #ff7b72 !important;
+  text-decoration: underline !important;
+}
+
+/* 6. Turinio blokai ir kortelės su tamsiu fonu ir kraštine */
+section, .services .p-4, .resume-item, .portfolio-card, div[class*="col-"] > div {
+  background-color: #161b22 !important;
+  border: 2px solid #30363d !important;
+  border-radius: 16px !important;
+  padding: 30px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Užtikriname, kad visi tekstai ir aprašymai kortelėse ar po medija būtų idealiai matomi */
+section p, .services p, .portfolio-card p, .resume-item p, div[class*="col-"] p, span, small {
+  color: #f0f6fc !important;
+}
+
+/* 7. Navigacijos juosta ir „Į viršų“ mygtukas */
+.header {
+  background-color: #161b22 !important;
+  border-bottom: 3px solid #f85149 !important;
+}
+
+.scroll-top {
+  background-color: #f85149 !important;
+  border-radius: 10px !important;
+  width: 50px !important;
+  height: 50px !important;
+  color: #ffffff !important;
+}
+
+.scroll-top:hover {
+  background-color: #da3633 !important;
+  transform: translateY(-3px);
+}
