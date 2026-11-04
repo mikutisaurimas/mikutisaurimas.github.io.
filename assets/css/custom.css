@@ -1,3 +1,7 @@
+/* ==========================================
+   GALUTINIS MODERNŪS STILIAI (RAUDONI AKCENTAI)
+   ========================================== */
+
 /* 1. Visos svetainės fonas ir šriftas */
 body, html {
   background-color: #0d1117 !important;
@@ -82,19 +86,30 @@ section p, .services p, .portfolio-card p, .resume-item p, div[class*="col-"] p,
   background-color: #da3633 !important;
   transform: translateY(-3px);
 }
-/* 1. a) Numeruotų ir nenumeruotų sąrašų stiliai (su pseudo-elementais) */
-ul {
+
+/* ==========================================
+   SĄRAŠAI (Netaikoma navigacijai)
+   ========================================== */
+
+/* Nenumeruoti sąrašai turinyje (aktyvuojami tik ne navigacijos sekcijose) */
+section ul:not(.nav):not(.navbar-nav), 
+.content ul:not(.nav):not(.navbar-nav), 
+article ul:not(.nav):not(.navbar-nav) {
   list-style: none !important;
   padding-left: 0 !important;
 }
 
-ul li {
+section ul:not(.nav):not(.navbar-nav) > li, 
+.content ul:not(.nav):not(.navbar-nav) > li, 
+article ul:not(.nav):not(.navbar-nav) > li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 8px;
 }
 
-ul li::before {
+section ul:not(.nav):not(.navbar-nav) > li::before, 
+.content ul:not(.nav):not(.navbar-nav) > li::before, 
+article ul:not(.nav):not(.navbar-nav) > li::before {
   content: "▶";
   position: absolute;
   left: 0;
@@ -103,21 +118,21 @@ ul li::before {
   top: 2px;
 }
 
-/* Numeruoti sąrašai su pasirinktu stiliumi */
-ol {
+/* Numeruoti sąrašai turinyje */
+section ol, .content ol, article ol {
   list-style: none !important;
   counter-reset: custom-counter;
   padding-left: 0 !important;
 }
 
-ol li {
+section ol > li, .content ol > li, article ol > li {
   counter-increment: custom-counter;
   position: relative;
   padding-left: 30px;
   margin-bottom: 8px;
 }
 
-ol li::before {
+section ol > li::before, .content ol > li::before, article ol > li::before {
   content: counter(custom-counter) ".";
   position: absolute;
   left: 0;
@@ -125,19 +140,7 @@ ol li::before {
   font-weight: bold;
 }
 
-/* 1. b) Įdėtinis sąrašas (Nested List) – atskiras stilius */
-ul ul, ol ul, ul ol, ol ol {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
-ul ul li::before {
-  content: "•" !important;
-  color: #c9d1d9 !important;
-}
-
-
-/* 2. Lentelių stiliai */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -149,7 +152,6 @@ table {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
-/* 2. a) Antraštinė eilutė (thead / th) */
 table th {
   background-color: #f85149 !important;
   color: #ffffff !important;
@@ -159,7 +161,6 @@ table th {
   border-bottom: 3px solid #da3633 !important;
 }
 
-/* 2. b) „Zebra“ stilius ir :hover efektas eilutėms */
 table tr:nth-child(even) {
   background-color: rgba(22, 27, 34, 0.8) !important;
 }
@@ -173,7 +174,6 @@ table tr:hover {
   transition: background-color 0.2s ease-in-out;
 }
 
-/* 2. c) Vienodi langelių vidiniai tarpai (Cell Padding) ir turinio lygiavimas centre */
 table th, table td {
   padding: 14px 20px !important;
   text-align: center !important;
