@@ -82,3 +82,102 @@ section p, .services p, .portfolio-card p, .resume-item p, div[class*="col-"] p,
   background-color: #da3633 !important;
   transform: translateY(-3px);
 }
+/* 1. a) Numeruotų ir nenumeruotų sąrašų stiliai (su pseudo-elementais) */
+ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+ul li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #f85149 !important;
+  font-size: 0.8rem;
+  top: 2px;
+}
+
+/* Numeruoti sąrašai su pasirinktu stiliumi */
+ol {
+  list-style: none !important;
+  counter-reset: custom-counter;
+  padding-left: 0 !important;
+}
+
+ol li {
+  counter-increment: custom-counter;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+ol li::before {
+  content: counter(custom-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #f85149 !important;
+  font-weight: bold;
+}
+
+/* 1. b) Įdėtinis sąrašas (Nested List) – atskiras stilius */
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul ul li::before {
+  content: "•" !important;
+  color: #c9d1d9 !important;
+}
+
+
+/* 2. Lentelių stiliai */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #161b22 !important;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* 2. a) Antraštinė eilutė (thead / th) */
+table th {
+  background-color: #f85149 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #da3633 !important;
+}
+
+/* 2. b) „Zebra“ stilius ir :hover efektas eilutėms */
+table tr:nth-child(even) {
+  background-color: rgba(22, 27, 34, 0.8) !important;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(33, 38, 45, 0.8) !important;
+}
+
+table tr:hover {
+  background-color: rgba(248, 81, 73, 0.15) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* 2. c) Vienodi langelių vidiniai tarpai (Cell Padding) ir turinio lygiavimas centre */
+table th, table td {
+  padding: 14px 20px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  border: 1px solid #30363d !important;
+  color: #f0f6fc !important;
+}
