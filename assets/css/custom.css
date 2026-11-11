@@ -1,4 +1,4 @@
-/* BENDRI STILIAI IR TAMSUS REŽIMAS */
+/* Bendri stiliai ir tamsus režimas */
 body, html {
   background-color: #0d1117 !important;
   color: #f0f6fc !important;
@@ -318,21 +318,91 @@ table th, table td {
 }
 
 
-/* Krovimo indikatorius */
-@keyframes customSpinnerRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+/* Animuotas gradientinis fonas paslaugų skiltyje */
+@keyframes activeBackgroundFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.custom-loader {
-  width: 45px;
-  height: 45px;
-  border: 4px solid #30363d;
-  border-top: 4px solid #f85149;
+#services, 
+.services {
+  background: linear-gradient(120deg, #0d1117, #f85149, #161b22, #da3633, #0d1117) !important;
+  background-size: 500% 500% !important;
+  animation: activeBackgroundFlow 5s ease-in-out infinite !important;
+}
+
+#services .service-item, 
+#services .p-4, 
+.services .service-item, 
+.services .p-4 {
+  background-color: rgba(22, 27, 34, 0.9) !important;
+}
+
+
+/* Animuotos CSS figūros apie skiltyje */
+#about, 
+.about {
+  position: relative;
+}
+
+#about::before, 
+.about::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border: 5px dashed #f85149;
   border-radius: 50%;
-  animation: customSpinnerRotate 1s linear infinite;
-  margin: 20px auto;
-  display: block;
+  animation: circleRotateScale 6s linear infinite;
+  z-index: 5;
+}
+
+#about::after, 
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #ff7b72;
+  animation: triangleFloat 4s ease-in-out infinite;
+  z-index: 5;
+}
+
+@keyframes circleRotateScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+    box-shadow: 0 0 0px rgba(248, 81, 73, 0);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    box-shadow: 0 0 15px rgba(248, 81, 73, 0.6);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    box-shadow: 0 0 0px rgba(248, 81, 73, 0);
+  }
+}
+
+@keyframes triangleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(15deg);
+  }
 }
 
 
