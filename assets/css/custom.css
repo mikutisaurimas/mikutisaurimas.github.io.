@@ -1,4 +1,4 @@
-/* Bendri stiliai */
+/* BENDRI STILIAI IR TAMSUS REŽIMAS */
 body, html {
   background-color: #0d1117 !important;
   color: #f0f6fc !important;
@@ -39,7 +39,7 @@ p, li, span, td, th {
   transform: scale(1.05);
 }
 
-/* „Apie“ (About) skilties mygtukai */
+/* Apie skilties mygtukai */
 #about a, 
 .about a, 
 #about .btn, 
@@ -110,7 +110,7 @@ section p, .services p, .portfolio-card p, .resume-item p, div[class*="col-"] p,
   transform: translateY(-3px);
 }
 
-/* Portfelio filtrų mygtukai (raudoni akcentai) */
+/* Portfelio filtrų mygtukai */
 ul.portfolio-flters li, 
 #portfolio-flters li, 
 .portfolio-filters li, 
@@ -146,7 +146,6 @@ ul.portfolio-flters li:hover a,
   box-shadow: 0 0 10px rgba(248, 81, 73, 0.6) !important;
 }
 
-/* Griežtas draudimas ženkleliams filtrų mygtukuose */
 #portfolio ul li::before, 
 .portfolio ul li::before, 
 .portfolio-flters li::before, 
@@ -155,7 +154,7 @@ ul.portfolio-flters li:hover a,
   display: none !important;
 }
 
-/* --- Pagrindiniai sąrašai (su trikampiais) --- */
+/* Pagrindiniai sąrašai */
 .content ul > li, 
 .resume-item ul > li, 
 .about-content ul > li,
@@ -178,7 +177,7 @@ section:not(#portfolio) ul > li::before {
   top: 2px;
 }
 
-/* --- Poskyriai / įdėtiniai elementai (su kvadratėliais) --- */
+/* Įdėtiniai sąrašai */
 .content ul ul > li::before, 
 .resume-item ul ul > li::before, 
 .about-content ul ul > li::before,
@@ -253,4 +252,132 @@ table th, table td {
   vertical-align: middle !important;
   border: 1px solid #30363d !important;
   color: #f0f6fc !important;
+}
+
+
+/* Socialinių tinklų ikonėlių animacija */
+@keyframes socialPulseSpin {
+  0% {
+    transform: scale(1) rotate(0deg);
+    color: #f0f6fc;
+  }
+  30% {
+    transform: scale(1.15) rotate(-10deg);
+    color: #ff7b72;
+  }
+  60% {
+    transform: scale(0.95) rotate(10deg);
+    color: #f85149;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    color: #f0f6fc;
+  }
+}
+
+.social-links a, 
+.socials a, 
+.social-icons a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover, 
+.socials a:hover, 
+.social-icons a:hover {
+  animation: socialPulseSpin 1.2s infinite ease-in-out;
+}
+
+
+/* Profilio nuotraukos švytėjimo animacija */
+@keyframes imageGlowPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0px rgba(248, 81, 73, 0);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(248, 81, 73, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0px rgba(248, 81, 73, 0);
+  }
+}
+
+#about img, 
+.about img, 
+.profile-img img {
+  transition: transform 0.3s ease;
+}
+
+#about img:hover, 
+.about img:hover, 
+.profile-img img:hover {
+  animation: imageGlowPulse 2s infinite ease-in-out;
+}
+
+
+/* Krovimo indikatorius */
+@keyframes customSpinnerRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.custom-loader {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #30363d;
+  border-top: 4px solid #f85149;
+  border-radius: 50%;
+  animation: customSpinnerRotate 1s linear infinite;
+  margin: 20px auto;
+  display: block;
+}
+
+
+/* Simestriniai dekoratyviniai pseudo-elementai antraštėms */
+section h2, 
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+section h2::before, 
+section h2::after, 
+.section-title h2::before, 
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: #f85149;
+  border-radius: 2px;
+  animation: symmetricGlow 2s infinite ease-in-out;
+}
+
+section h2::before, 
+.section-title h2::before {
+  left: 50%;
+  transform: translateX(-110%);
+}
+
+section h2::after, 
+.section-title h2::after {
+  left: 50%;
+  transform: translateX(10%);
+}
+
+@keyframes symmetricGlow {
+  0%, 100% {
+    width: 20px;
+    background-color: #f85149;
+    box-shadow: 0 0 5px rgba(248, 81, 73, 0.4);
+  }
+  50% {
+    width: 40px;
+    background-color: #ff7b72;
+    box-shadow: 0 0 15px rgba(248, 81, 73, 0.9);
+  }
 }
