@@ -39,6 +39,17 @@ p, li, span, td, th {
   transform: scale(1.05);
 }
 
+/* Neaktyvus siuntimo mygtukas */
+#contact-form button[type="submit"]:disabled {
+  background-color: #30363d !important;
+  border-color: #30363d !important;
+  color: #8b949e !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
 /* Apie skilties mygtukai */
 #about a, 
 .about a, 
@@ -254,7 +265,6 @@ table th, table td {
   color: #f0f6fc !important;
 }
 
-
 /* Socialinių tinklų ikonėlių animacija */
 @keyframes socialPulseSpin {
   0% {
@@ -288,7 +298,6 @@ table th, table td {
   animation: socialPulseSpin 1.2s infinite ease-in-out;
 }
 
-
 /* Profilio nuotraukos švytėjimo animacija */
 @keyframes imageGlowPulse {
   0% {
@@ -316,7 +325,6 @@ table th, table td {
 .profile-img img:hover {
   animation: imageGlowPulse 2s infinite ease-in-out;
 }
-
 
 /* Animuotas ir pulsuojantis gradientinis fonas paslaugų skiltyje */
 @keyframes pulseGradientFlow {
@@ -348,7 +356,6 @@ table th, table td {
   background-color: rgba(22, 27, 34, 0.85) !important;
 }
 
-
 /* Krovimo indikatorius paslaugų skiltyje */
 @keyframes customSpinnerRotate {
   0% {
@@ -375,7 +382,6 @@ table th, table td {
   position: relative;
   z-index: 2;
 }
-
 
 /* Animuotos CSS figūros apie skiltyje */
 #about, 
@@ -436,8 +442,7 @@ table th, table td {
   }
 }
 
-
-/* Simestriniai dekoratyviniai pseudo-elementai antraštėms */
+/* Simetriniai dekoratyviniai pseudo-elementai antraštėms */
 section h2, 
 .section-title h2 {
   position: relative;
@@ -481,4 +486,26 @@ section h2::after,
     background-color: #ff7b72;
     box-shadow: 0 0 15px rgba(248, 81, 73, 0.9);
   }
+}
+
+/* Rezultatų blokas po forma */
+#formos-rezultatai {
+  background-color: #161b22 !important;
+  border: 2px solid #f85149 !important;
+  border-radius: 16px !important;
+  padding: 25px 30px !important;
+}
+
+#formos-rezultatai p {
+  margin-bottom: 6px !important;
+}
+
+#formos-rezultatai hr {
+  border-color: #30363d !important;
+  opacity: 1 !important;
+}
+
+#formos-rezultatai .vidurkis {
+  font-size: 1.3rem !important;
+  color: #ff7b72 !important;
 }
